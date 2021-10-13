@@ -14,8 +14,22 @@
       name="description"
       content=""
     />
-    <script id="becookies.tech-scripts" async src="https://dev.becookies.tech/script.js?version=2" data-id="615bd9b04f3427a579f7f160" charset="utf-8"></script>
+    <script id="becookies.tech-scripts" src="https://dev.becookies.tech/script.js?version=2" data-id="615bd9b04f3427a579f7f160" charset="utf-8"></script>
 
+    <script>
+      setTimeout(() => {
+        document.cookie = 'test-immediate=test; Max-Age=1278000;'
+        document.cookie = 'test-immediate-2=test; Max-Age=1278000;'
+      }, 0)
+    </script>
+    <script>
+      setTimeout(() => {
+        document.cookie = 'test-marketing=test; Max-Age=1278000;'
+        document.cookie = 'test-marketing-2=test; Max-Age=1278000;'
+        document.cookie = 'test-eiei=test; Max-Age=1278000;'
+      }, 0)
+    </script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
